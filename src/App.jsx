@@ -5,7 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="container-fluid py-4" style={{ maxWidth: "1200px" }}>
         <Routes>
           <Route path="/" element={<ProjectsPage />} />
@@ -13,7 +13,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
